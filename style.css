@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101426;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background: #191f38;
+}
+
+header h1 {
+    color: #a78bfa;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: #202944;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 26px;
+    color: #a78bfa;
+    margin-bottom: 8px;
+}
+
+.form-section,
+.accounts-section {
+    background: #202944;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #c4b5fd;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 14px;
+    border: 1px solid #46516d;
+    border-radius: 7px;
+    background: #151d32;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #a78bfa;
+}
+
+.password-input {
+    display: flex;
+    gap: 8px;
+}
+
+.password-input input {
+    flex: 1;
+    min-width: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 15px;
+    font-weight: bold;
+}
+
+#toggleInput {
+    height: 40px;
+    background: #46516d;
+    color: white;
+}
+
+.generator {
+    margin: 12px 0;
+}
+
+#generateBtn {
+    background: #46516d;
+    color: white;
+}
+
+.add-btn {
+    width: 100%;
+    background: #8b5cf6;
+    color: white;
+    padding: 14px;
+}
+
+.add-btn:hover {
+    background: #7c3aed;
+}
+
+.strength {
+    height: 6px;
+    background: #46516d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#strengthBar {
+    height: 100%;
+    width: 0;
+    transition: 0.3s;
+}
+
+#strengthText {
+    font-size: 12px;
+    color: #cbd5e1;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.account-card {
+    background: #151d32;
+    border: 1px solid #46516d;
+    padding: 18px;
+    border-radius: 9px;
+    margin-top: 14px;
+    overflow-wrap: anywhere;
+}
+
+.account-card h3 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+.account-card p {
+    margin: 8px 0;
+    color: #cbd5e1;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.actions button {
+    color: white;
+}
+
+.show-btn {
+    background: #2563eb;
+}
+
+.copy-btn {
+    background: #08916b;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+#accountList:empty::after {
+    content: "No accounts saved yet. Add your first account!";
+    display: block;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+@media (max-width: 550px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    .form-section,
+    .accounts-section {
+        padding: 18px;
+    }
+}
